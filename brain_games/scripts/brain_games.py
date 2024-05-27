@@ -4,7 +4,6 @@ from brain_games.cli import question_and_cheer
 
 
 def main():
-    print('Welcome to the Brain Games!')
     question_and_cheer()
     
 
