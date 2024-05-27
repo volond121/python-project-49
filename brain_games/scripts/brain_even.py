@@ -1,7 +1,9 @@
 from brain_games.b_even import games_even
+from brain_games.cli import question_and_cheer
 
 
-def main(name_user):
+def main():
+    name_user = question_and_cheer()
     if games_even() == "wrong":
         print(f"Let's try again, {name_user}")
         return False
@@ -11,5 +13,4 @@ def main(name_user):
 
 
 if __name__ == '__main__':
-    name_user = "User"
-    main(name_user)
+    main()
