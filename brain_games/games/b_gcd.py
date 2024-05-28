@@ -7,8 +7,8 @@ def games_gcd():
     for i in range(3):
         arg_a = random.randint(1, 100)
         arg_b = random.randint(1, 100)
-        
-        #ищем наибольшее число
+
+        # ищем наибольшее число
 
         if arg_a < arg_b:
             find_a = arg_b
@@ -16,7 +16,7 @@ def games_gcd():
         else:
             find_a = arg_a
             find_b = arg_b
-               
+
         remains = find_a % find_b
         remains_rull = find_b
         divisible = find_b
@@ -26,10 +26,10 @@ def games_gcd():
             remains_rull = divider
             divisible = divider
             divider = remains
-        
+
         str_qust = str(arg_a) + " " + str(arg_b)
         answer = answer_user(str_qust, remains_rull, 'int_arg')
-        if not(answer):
+        if not (answer):
             return False
-    
+
     return True

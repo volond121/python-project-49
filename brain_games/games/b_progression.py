@@ -18,7 +18,7 @@ def games_progression():
             else:
                 str_qwes = str_qwes + str(calc_next_num) + ' '
         answer = answer_user(str_qwes, brain_numb, 'int_arg')
-        if not(answer):
+        if not (answer):
             return False
-    
+
     return True

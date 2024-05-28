@@ -21,7 +21,7 @@ def games_calc():
                 result = arg_a * arg_b
                 str_qust = str(arg_a) + " * " + str(arg_b)
                 answer = answer_user(str_qust, result, 'int_arg')
-        if not(answer):
+        if not (answer):
             return False
-    
+
     return True

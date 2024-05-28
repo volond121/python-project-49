@@ -1,12 +1,15 @@
 import prompt
 
 
+# greeting and name request
 def question_and_cheer():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name?')
     print(f"Hello, {name}!")
     return name
 
+
+# checking the player's response
 def answer_user(str_qust, result, viwe_arg):
     print("Question: " + str_qust)
     answer_use = prompt.string('Your answer: ')
@@ -15,6 +18,6 @@ def answer_user(str_qust, result, viwe_arg):
             print('Correct!')
             return True
         else:
-            print(f"'{answer_use}' is wrong answer ;(. " 
+            print(f"'{answer_use}' is wrong answer ;(. "
                   f"Correct answer was '{result}'.")
             return False
