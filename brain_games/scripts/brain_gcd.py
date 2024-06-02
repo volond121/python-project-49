@@ -5,7 +5,6 @@ from brain_games.cli import question_and_cheer
 import brain_games.games_fun as games_fun
 
 
-
 def main():
     name_user = question_and_cheer()
     print("Find the greatest common divisor of given numbers.")

@@ -10,10 +10,12 @@ def colc_resoult_even(nambe_for_qustion):
         answer_true = "no"
     return answer_true
 
+
 def games_even(rounds):
     for i in range(rounds):
         nambe_for_qustion = random.randint(1, 100)
-        answer = answer_user(str(nambe_for_qustion), colc_resoult_even(nambe_for_qustion), 'int_arg')
+        answer = answer_user(str(nambe_for_qustion),
+                             colc_resoult_even(nambe_for_qustion), 'int_arg')
         if not (answer):
             return False
 

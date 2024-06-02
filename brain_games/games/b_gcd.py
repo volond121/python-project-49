@@ -23,6 +23,7 @@ def colc_resoults_gcd(arg_a, arg_b):
     str_qust = str(arg_a) + " " + str(arg_b)
     return (str_qust, remains_rull)
 
+
 def games_gcd(rounds):
     for i in range(rounds):
         arg_a = random.randint(1, 100)

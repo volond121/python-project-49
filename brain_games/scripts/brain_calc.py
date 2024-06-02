@@ -9,7 +9,7 @@ def main():
     name_user = question_and_cheer()
     print("What is the result of the expression?")
     games_fun.result_us(games_calc(games_fun.NUM_ROUNDS), name_user)
- 
+
 
 if __name__ == '__main__':
     main()

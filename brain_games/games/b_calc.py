@@ -15,6 +15,7 @@ def calc_resoults(sign, arg_a, arg_b):
             str_qust = str(arg_a) + " * " + str(arg_b)
     return (str_qust, result)
 
+
 def games_calc(rounds):
     for i in range(rounds):
         arg_a = random.randint(1, 100)

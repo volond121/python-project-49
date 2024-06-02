@@ -1,7 +1,8 @@
 import prompt
 
 
-NUM_ROUNDS = 3 #number of rounds
+NUM_ROUNDS = 3  # number of rounds
+
 
 # checking the player's response
 def answer_user(str_qust, result, viwe_arg):
@@ -15,6 +16,7 @@ def answer_user(str_qust, result, viwe_arg):
             print(f"'{answer_use}' is wrong answer ;(. "
                   f"Correct answer was '{result}'.")
             return False
+
 
 def result_us(result_answer, user_name):
     if not (result_answer):
