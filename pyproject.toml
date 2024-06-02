@@ -1,12 +1,17 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Math games"
 authors = ["Vadim Sotnikov <602587@list.ru>"]
 readme = "README.md"
 packages = [
     { include = "brain_games" },
 ]
+classifiers = [
+    "Build Moduls",
+    "Libraries :: Python Modules, Prompt"
+]
+repository = "https://github.com/volond121/python-project-49.git"
 
 [tool.poetry.dependencies]
 python = "^3.10"

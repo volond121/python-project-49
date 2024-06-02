@@ -1,3 +1,21 @@
+<h1>Brain Games - math games for score development</h1>
+<p>
+brain-even - "even" or "not even" <br>
+brain-calc - arithmetic operations <br>
+brain-gcd - finding a common divisor <br>
+brain-prime - the numbe "prime" or "not prime" <br>
+brain-progression -search for the dropped number from the progression <br>
+</p>
+
+<p> <a href="https://python-poetry.org/docs/"> poetry </a> is required to be installed to run </p>
+
+<p>
+Installation: <br>
+git clone git@github.com:volond121/python-project-49.git <br>
+make build <br>
+make package-install <br>
+</p>
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/volond121/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/volond121/python-project-49/actions)
 
