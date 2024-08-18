@@ -5,17 +5,17 @@ def calc_results(sign, arg_a, arg_b):
     match sign:
         case '+':
             result = arg_a + arg_b
-            str_qust = f"{str(arg_a)} + {str(arg_b)}"
+            answer = f"{str(arg_a)} + {str(arg_b)}"
         case '-':
             result = arg_a - arg_b
-            str_qust = f"{str(arg_a)} - {str(arg_b)}"
+            answer = f"{str(arg_a)} - {str(arg_b)}"
         case '*':
             result = arg_a * arg_b
-            str_qust = f"{str(arg_a)} * {str(arg_b)}"
-    return (str_qust, result)
+            answer = f"{str(arg_a)} * {str(arg_b)}"
+    return (answer, result)
 
 
-def gat_res_calc():
+def get_res_calc():
     arg_a = random.randint(1, 100)
     arg_b = random.randint(1, 100)
     math_action = random.choice(['+', '-', '*'])

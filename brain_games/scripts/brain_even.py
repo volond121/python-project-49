@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
-from brain_games.cli import welcome_user
+from brain_games.games.even import get_res_even
 import brain_games.game_engine as game_engine
 
 
 def main():
-    name_user = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    game_engine.play_game('even', name_user)
+    game_engine.play_game(
+        get_res_even, 'Answer "yes" if the number is even, '
+        'otherwise answer "no".')
 
 
 if __name__ == '__main__':

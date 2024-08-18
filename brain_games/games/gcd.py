@@ -1,7 +1,7 @@
 import random
 
 
-def colc_results_gcd(arg_a, arg_b):
+def get_gcd(arg_a, arg_b):
     if arg_a < arg_b:
         find_a = arg_b
         find_b = arg_a
@@ -23,7 +23,7 @@ def colc_results_gcd(arg_a, arg_b):
     return (query_string, remains_rull)
 
 
-def gat_res_gcd():
+def get_res_gcd():
     arg_a = random.randint(1, 100)
     arg_b = random.randint(1, 100)
-    return colc_results_gcd(arg_a, arg_b)
+    return get_gcd(arg_a, arg_b)

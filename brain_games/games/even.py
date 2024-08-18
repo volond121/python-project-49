@@ -1,15 +1,12 @@
 import random
 
 
-def colc_result_even(nambe_for_qustion):
-    remain = nambe_for_qustion % 2
-    if (remain == 0):
-        is_true = "yes"
-    else:
-        is_true = "no"
-    return is_true
+def is_calc_result_even(numbe_for_qustion):
+    remain = numbe_for_qustion % 2
+    return remain == 0
 
 
-def gat_res_even():
-    nambe_for_qustion = random.randint(1, 100)
-    return (str(nambe_for_qustion), colc_result_even(nambe_for_qustion))
+def get_res_even():
+    numbe_for_qustion = random.randint(1, 100)
+    return (str(numbe_for_qustion),
+            "yes" if is_calc_result_even(numbe_for_qustion) else "no")

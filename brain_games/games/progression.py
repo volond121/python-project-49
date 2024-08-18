@@ -10,7 +10,7 @@ def calc_result_progress(start_arg, long_str, step_str, find_number):
     return (generated_query_string, right_answer)
 
 
-def gat_res_progression():
+def get_res_progression():
     start_arg = random.randint(1, 100)
     long_str = random.randint(5, 10)
     step_str = random.randint(2, 10)

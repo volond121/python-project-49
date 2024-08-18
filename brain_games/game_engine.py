@@ -1,12 +1,14 @@
 import prompt
-from brain_games.games.calc import gat_res_calc
-from brain_games.games.even import gat_res_even
-from brain_games.games.gcd import gat_res_gcd
-from brain_games.games.prime import gat_res_prime
-from brain_games.games.progression import gat_res_progression
 
 
 NUM_ROUNDS = 3  # number of rounds
+
+
+def welcome_user():
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
+    return name
 
 
 # checking the player's response
@@ -22,19 +24,11 @@ def gat_answer_user(question, result):
         return False
 
 
-def play_game(game, user_name):
+def play_game(game, greeting):
+    user_name = welcome_user()
+    print(greeting)
     for i in range(NUM_ROUNDS):
-        match game:
-            case 'calc':
-                (generated_query_string, right_answer) = gat_res_calc()
-            case 'even':
-                (generated_query_string, right_answer) = gat_res_even()
-            case 'gcd':
-                (generated_query_string, right_answer) = gat_res_gcd()
-            case 'prime':
-                (generated_query_string, right_answer) = gat_res_prime()
-            case 'progression':
-                (generated_query_string, right_answer) = gat_res_progression()
+        (generated_query_string, right_answer) = game()
         answer = gat_answer_user(generated_query_string, right_answer)
         if not (answer):
             break
