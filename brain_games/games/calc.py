@@ -1,22 +1,20 @@
 import random
 
 
-def calc_results(sign, arg_a, arg_b):
+def apply_operator(sign, arg_a, arg_b):
     match sign:
         case '+':
             result = arg_a + arg_b
-            answer = f"{str(arg_a)} + {str(arg_b)}"
         case '-':
             result = arg_a - arg_b
-            answer = f"{str(arg_a)} - {str(arg_b)}"
         case '*':
             result = arg_a * arg_b
-            answer = f"{str(arg_a)} * {str(arg_b)}"
-    return (answer, result)
+    return result
 
 
-def get_res_calc():
+def get_round_params_calc():
     arg_a = random.randint(1, 100)
     arg_b = random.randint(1, 100)
     math_action = random.choice(['+', '-', '*'])
-    return calc_results(math_action, arg_a, arg_b)
+    answer = f"{str(arg_a)} {math_action} {str(arg_b)}"
+    return (answer, apply_operator(math_action, arg_a, arg_b))

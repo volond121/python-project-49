@@ -1,7 +1,7 @@
 import prompt
 
 
-NUM_ROUNDS = 3  # number of rounds
+NUM_ROUNDS = 3
 
 
 def welcome_user():
@@ -11,25 +11,24 @@ def welcome_user():
     return name
 
 
-# checking the player's response
-def gat_answer_user(question, result):
+def run_round(question, expected_result):
     print("Question: " + question)
-    answer_use = prompt.string('Your answer: ')
-    if answer_use == str(result):
+    user_answer = prompt.string('Your answer: ')
+    if user_answer == str(expected_result):
         print('Correct!')
         return True
     else:
-        print(f"'{answer_use}' is wrong answer ;(. "
-              f"Correct answer was '{result}'.")
+        print(f"'{user_answer}' is wrong answer ;(. "
+              f"Correct answer was '{expected_result}'.")
         return False
 
 
-def play_game(game, greeting):
+def play_game(get_round_params, greeting):
     user_name = welcome_user()
     print(greeting)
     for i in range(NUM_ROUNDS):
-        (generated_query_string, right_answer) = game()
-        answer = gat_answer_user(generated_query_string, right_answer)
+        (generated_query_string, right_answer) = get_round_params()
+        answer = run_round(generated_query_string, right_answer)
         if not (answer):
             break
     if not (answer):
