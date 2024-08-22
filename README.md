@@ -7,18 +7,23 @@
 ### List of games in the collection
 
 1. **brain-even**
+
     *rules: whot number "even" or "not even" ?*
 
 2. **brain-calc**
+
     *rules: count (arithmetic operations)*
 
 3. **brain-gcd**
+
     *rules: finding a common divisor* 
 
 4. **brain-prime**
+
     *rules: whot numbe "prime" or "not prime" ?*
 
 5. **brain-progression**
+
     *rules: search for the dropped number from the progression* 
 
 ### Installation:
@@ -27,14 +32,16 @@
 > [poetry](https://python-poetry.org/docs/) is required to be installed to run
 
 ```git clone git@github.com:volond121/python-project-49.git```
+
 ```make build```
+
 ```make package-install```
 
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/volond121/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/volond121/python-project-49/actions)
 
-[![Linter Status](https://codeclimate.com/github/volond121/python-project-49/maintainability)](https://api.codeclimate.com/v1/badges/e65e05d2484a6468ccad/maintainability)
+[![Linter Status](https://api.codeclimate.com/v1/badges/e65e05d2484a6468ccad/maintainability)](https://codeclimate.com/github/volond121/python-project-49/maintainability)
 
 ### Demonstration
 
